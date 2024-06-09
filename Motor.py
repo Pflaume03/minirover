@@ -8,8 +8,6 @@ class Motor:
         self.AIN2_pin = AIN2_pin
         self.AIN1_pin = AIN1_pin
         self.STBY_pin = STBY_pin
-        
-    def GPIO_setup(self):
         GPIO.setup(PWMA_pin, GPIO.OUT)
         GPIO.setup(AIN2_pin, GPIO.OUT)
         GPIO.setup(AIN1_pin, GPIO.OUT)
